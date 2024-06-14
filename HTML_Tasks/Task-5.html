@@ -5,7 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html-Task5</title>
     <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      form {
+        width: 50%;
+        margin: auto;
+      }
       table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 8px;
+        border: 1px solid #ccc;
+      }
+      th {
+        text-align: left;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="number"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+      .checkbox-group {
+        display: flex;
+        gap: 10px;
+      }
+      .checkbox-group input {
+        margin-top: 5px;
+      }
+      .checkbox-group label {
+        margin-top: 2px;
       }
     </style>
   </head>
@@ -89,16 +125,14 @@
               </td>
             </tr>
             <tr>
-              <td colspan="2" align="center">
-                <button type="submit">Register</button>
+              <td colspan="2" style="text-align: right">
+                <a href="http://ethnus.com">Log in to Ethnus website</a>
               </td>
             </tr>
           </table>
         </form>
         <div style="text-align: center">
-          <a href="http://www.ethnus.com" target="_blank"
-            >Log in to Ethnus website</a
-          >
+          <button type="submit">Register</button>
         </div>
       </body>
     </html>
